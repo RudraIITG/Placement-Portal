@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Offer Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file if needed -->
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Job Recruitment Form</h2>
+    <form action="job_offer.php" method="POST">
+        <label for="jobid">Job ID:</label>
+        <input type="number" id="JobID" name="JobID" required>
+        <br>
+        
+        <label for="CompanyID">Company ID:</label>
+        <input type="number" id="companyID" name="companyID" required>
+        <br>
+        <label for="CompanyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required>
+        <br>
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required>
+        <br>
+
+        <label for="jobdescription">Job Description:</label>
+        <input type="text" id="jobdescription" name="jobdescription" required>
+        <br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" required>
+        <br>
+
+        <label for="backlogs">Allow Backlogs:</label>
+        <select id="allow_backlogs" name="allow_backlogs" required>
+            <option value="" disabled selected>Select</option>
+            <option value="YES">Allow backlogs</option>
+            <option value="NO">Do not allow</option>
+        </select>
+
+        <label for="mincpi">Minimum CPI:</label>
+        <input type="number" id="mincpi" name="mincpi" step="0.1" min="0" max="10"  required>
+        <br>
+
+
+
+
+
+
+        
+        
+
+        <button type="submit">Submit Job Offer</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="student_login.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login as <span id="user-role">Student</span></h2>
+    <form action="studentloginprocess.php" method="POST">
+        <p>Roll Number:</p>
+        <input type="text" name="roll" id="Roll">
+        <br>
+        <p>Name:</p>
+        <input type="text" id="" name="name" required>
+        <br>
+
+        <p>Password</p>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+
+        <button type="submit">Login</button>
+
+    </form>
+<br>
+<form action="student_register.html" method="POST">
+    <button type="submit" >register</button>
+</form>
+</div>
+
+<script>
+    // Get role from URL parameters and update page
+    const urlParams = new URLSearchParams(window.location.search);
+    const role = urlParams.get('role') || 'Student';
+    document.getElementById('user-role').textContent = role.charAt(0).toUpperCase() + role.slice(1);
+    document.getElementById('role-input').value = role;
+</script>
+
+</body>
+</html>
