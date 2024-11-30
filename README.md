@@ -1,4 +1,5 @@
 # This Project is made under the supervision of Prof. Ashok Singh Sairam, IIT Guwahati. The project is titled Placement-Portal and is a proficient web application having all features needed in a recruitment process starting from student registration to shortlisting students based on cut off criteria.
+
 We have used HTML and CSS for front end development and used PHP for backend applications and connecting to the database, we stored the data in Xampp(phpmyAdmin Database) and used MySQL for database creation and table query.
 The project has the following major features:
 1. Student/ Recruiter registration and account formation
